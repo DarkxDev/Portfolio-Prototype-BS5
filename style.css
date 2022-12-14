@@ -1,0 +1,91 @@
+:root {
+  --persian-blue: #7f8cff;
+  --blue-bg: #f4f5f7;
+  --primary: #6070ff;
+  --primary-btn: #396df2;
+  --title-clr: #091e42;
+  --accordion-icon-bg: #f7f7f9;
+  --pcolor: #ebebff;
+}
+
+.pcolor {
+  color: var(--pcolor);
+}
+
+.persian-blue {
+  color: var(--persian-blue);
+}
+
+.blue-bg {
+  background-color: var(--blue-bg);
+}
+
+.primary-clr {
+  color: var(--primary);
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}
+
+.primary-btn-clr {
+  color: var(--primary-btn);
+}
+
+.title-clr {
+  color: var(--title-clr);
+}
+
+.icon-bg {
+  background-color: var(--accordion-icon-bg);
+}
+
+.ls-sty-none {
+  list-style-type: none;
+}
+
+.mw-1024px {
+  max-width: 1024px;
+}
+
+.mw-600 {
+  max-width: 600px;
+}
+
+.w-447px {
+  width: 447px;
+}
+
+.h-90vh {
+  height: 90vh;
+}
+
+.w-max-content {
+  width: max-content;
+}
+
+@media (max-width: 720px) {
+  .projects article {
+    flex-direction: column;
+  }
+
+  .projects article article:not(:has(img)) {
+    order: 1;
+  }
+
+  .aboutme {
+    flex-direction: column;
+  }
+
+  .aboutme:last-child {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
